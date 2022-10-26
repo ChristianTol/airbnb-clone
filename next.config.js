@@ -6,7 +6,7 @@ const nextConfig = {
     domains: ["links.papareact.com"],
   },
   env: {
-    mapbox_key: ""
+    mapbox_key: process.env.mapbox_key,
   }
 }
 
