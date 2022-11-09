@@ -66,6 +66,7 @@ export default function Home({ exploreData, cardData }) {
   );
 }
 
+// Props generated to the page at build time. (generated when website is build)
 export async function getStaticProps() {
   const exploreData = await fetch("https://links.papareact.com/pyp", { agent }).
   then(

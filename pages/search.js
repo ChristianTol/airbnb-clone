@@ -69,6 +69,7 @@ function Search({ searchResults }) {
 
 export default Search;
 
+// Props rendered at run time for every request 
 export async function getServerSideProps() {
   const searchResults = await fetch("https://links.papareact.com/isz", { agent }).
   then(res => res.json());
